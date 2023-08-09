@@ -1,36 +1,36 @@
 export const meta = {
- title: "Igor Kowalczyk",
- author: "Igor Kowalczyk",
- description: "I'm a full-stack developer based in Poland. I have a passion for building web applications and solving problems",
+ title: "Marco Paredes",
+ author: "Marco Paredes",
+ description: "I'm a software engineer based in San Diego. I have a passion for building web applications and solving problems",
  url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : `http://localhost:${process.env.PORT || 3000}`,
  themeColor: "#091430",
  locale: "en_US",
- siteName: "Igor Kowalczyk",
+ siteName: "Marco Paredes",
  accounts: {
   github: {
-   username: "igorkowalczyk",
-   repo: "igorkowalczyk.github.io",
+   username: "marcopared",
+   repo: "marcopared.github.io",
   },
   twitter: {
-   username: "@majonezexe",
+   username: "@marco_pared",
   },
   discord: {
-   username: "Majonez.exe#2495",
+   username: "markermoola",
    invite: "https://discord.gg/uxtSMtd2xZ",
    id: "544164729354977282",
   },
   instagram: {
-   username: "majonezexe",
+   username: "marc.pared",
   },
  },
 };
 
 export const header = {
- title: "Igor Kowalczyk",
- subtitle: "Full-stack developer",
+ title: "Marco Paredes",
+ subtitle: "Software Engineer",
  description: meta.description,
  code: {
-  user: "igorkowalczyk",
+  user: "marcopared",
  },
 };
 
@@ -65,7 +65,7 @@ export const nav = {
 export const contact = {
  links: [
   {
-   href: "mailto:majonezexe@protonmail.com",
+   href: "mailto:marco.paredes2001@gmail.com",
    title: "Email",
    icon: (
     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 duration-200 motion-reduce:transition-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

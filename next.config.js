@@ -15,7 +15,7 @@ const nextConfig = {
     headers: [
      {
       key: "Access-Control-Allow-Origin",
-      value: "https://igorkowalczyk.dev",
+      value: "https://marcoparedes.vercel.app",
      },
      {
       key: "Access-Control-Allow-Methods",
@@ -110,17 +110,17 @@ const nextConfig = {
    },
    {
     source: "/twitter",
-    destination: "https://twitter.com/majonezexe",
+    destination: "https://twitter.com/marco_pared",
     permanent: true,
    },
    {
     source: "/instagram",
-    destination: "https://www.instagram.com/majonezexe/",
+    destination: "https://www.instagram.com/marc.pared/",
     permanent: true,
    },
    {
     source: "/github",
-    destination: "https://github.com/igorkowalczyk",
+    destination: "https://github.com/marcopared",
     permanent: true,
    },
    {
