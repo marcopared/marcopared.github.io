@@ -14,7 +14,7 @@ import Link from "next/link";
 export const runtime = "edge";
 
 export const metadata = {
- title: "Igor Kowalczyk",
+ title: "Marco Paredes",
 };
 
 export default async function HomePage() {
