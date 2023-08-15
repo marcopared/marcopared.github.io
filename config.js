@@ -1,7 +1,7 @@
 export const meta = {
  title: "Marco Paredes",
  author: "Marco Paredes",
- description: "I'm a software engineer based in San Diego. I have a passion for building web applications and solving problems",
+ description: "I'm a software engineer based in San Diego. I have a passion for engineering real-world solutions.",
  url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : `http://localhost:${process.env.PORT || 3000}`,
  themeColor: "#091430",
  locale: "en_US",
@@ -22,6 +22,12 @@ export const meta = {
   instagram: {
    username: "marc.pared",
   },
+  linkedin: {
+    username: "ma-parede",
+  },
+  strava: {
+    id: "107116948"
+  }
  },
 };
 
@@ -43,22 +49,14 @@ export const nav = {
   {
    href: "/repositories/",
    title: "My work",
-  },
-  {
-   href: "/blog/",
-   title: "Blog",
-  },
+  }
  ],
  right: [
   {
-   href: "/photography/",
-   title: "Photography",
-  },
-  {
-   href: meta.accounts.discord.invite,
-   title: "Discord",
+   href: "https://linkedin.com/in/ma-parede/",
+   title: "LinkedIn",
    target: "_blank",
-  },
+  }
  ],
 };
 
@@ -70,15 +68,6 @@ export const contact = {
    icon: (
     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 duration-200 motion-reduce:transition-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
      <path strokeLinecap="round" strokeLinejoin="round" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-    </svg>
-   ),
-  },
-  {
-   href: meta.accounts.discord.invite,
-   title: "Discord",
-   icon: (
-    <svg className="h-5 w-5 fill-[#5865F2] duration-200 motion-reduce:transition-none" width="71" height="55" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-     <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z" />
     </svg>
    ),
   },
@@ -157,19 +146,11 @@ export const footer = {
     {
      title: "Projects",
      href: "/repositories",
-    },
-    {
-     title: "Blog",
-     href: "/blog",
-    },
-    {
-     title: "Photography",
-     href: "/photography",
-    },
+    }
    ],
   },
   {
-   title: "Social",
+   title: "Socials",
    links: [
     {
      title: "Github",
@@ -181,21 +162,26 @@ export const footer = {
      href: `https://instagram.com/${meta.accounts.instagram.username}`,
      target: "_blank",
     },
-
     {
-     title: "Discord",
-     href: meta.accounts.discord.invite,
+     title: "LinkedIn",
+     href: `https://linkedin.com/in/${meta.accounts.linkedin.username}`,
      target: "_blank",
     },
+    {
+        title: "Twitter",
+        href: `https://twitter.com/${meta.accounts.twitter.username}`,
+        target: "_blank",
+    },
+    {
+        title: "Strava",
+        href: `https://www.strava.com/athletes/${meta.accounts.strava.id}`,
+        target: "_blank",
+    }
    ],
   },
   {
    title: "Other",
    links: [
-    {
-     title: "What i use",
-     href: "/uses",
-    },
     {
      title: "Contact",
      href: "/contact",
@@ -205,7 +191,70 @@ export const footer = {
  ],
 };
 
+export const experience = [
+    {
+        name: "Qualcomm",
+        position: "Software Engineering Intern        ",
+        date: "June 2022 - September 2022",
+        skills: ["Python", "AWS", "SQL", "Git"],
+        link: "https://www.qualcomm.com/",
+        icon: "/assets/experience/qualcomm.svg"
+    },
+    {
+        name: "pSemi",
+        position: "Characterization Engineering Intern",
+        date: "September 2021 - February 20222",
+        skills: ["Python", "Excel"],
+        link: "https://www.psemi.com/",
+        icon: "/assets/experience/psemi.svg"
+    },
+    {
+        name: "Northrop Grumman",
+        position: "Software Engineering Intern       ",
+        date: "June 2021 - September 2021",
+        skills: ["Python", "JavaScript", "Matplotlib"],
+        link: "https://www.northropgrumman.com/",
+        icon: "/assets/experience/ng.svg"
+    },
+    {
+        name: "ECE 196 at UCSD",
+        position: "Engineering Tutor                 ",
+        date: "January 2020 - May 2021",
+        skills: ["C/C++", "Arduino C"],
+        link: "https://www.ece.ucsd.edu/undergraduate/course-information/hands-courses",
+        icon: "/assets/experience/ucsd.svg"
+    },
+    {
+        name: "CMRR at UCSD",
+        position: "Undergraduate Researcher          ",
+        date: "September 2019 - March 2020",
+        skills: ["C/C++"],
+        link: "https://cmrr.ucsd.edu/",
+        icon: "/assets/experience/cmrr.svg"
+    }
+]
+
 export const technologies = [
+ {
+    name: "Python",
+    icon: "/assets/tech/python.svg",
+    link: "https://www.python.org/"
+ },
+ {
+    name: "AWS",
+    icon: "/assets/tech/aws.svg",
+    link: "https://aws.amazon.com/"
+ },
+ {
+    name: "MySQL",
+    icon: "/assets/tech/mysql.svg",
+    link: "https://www.mysql.com/",
+ },
+ {
+    name: "Javascript",
+    icon: "/assets/tech/javascript.svg",
+    link: "https://www.javascript.com/",
+ },
  {
   name: "React",
   icon: "/assets/tech/react.svg",
@@ -218,40 +267,42 @@ export const technologies = [
   link: "https://nextjs.org/",
  },
  {
-  name: "TailwindCSS",
-  icon: "/assets/tech/tailwindcss.svg",
-  link: "https://tailwindcss.com/",
- },
+    name: "Plotly",
+    icon: "/assets/tech/plotly.svg",
+    link: "https://plotly.com/"
+ }, 
  {
-  name: "Javascript",
-  icon: "/assets/tech/javascript.svg",
- },
- {
-  name: "Typescript",
-  icon: "/assets/tech/typescript.svg",
-  link: "https://www.typescriptlang.org/",
- },
- {
-  name: "Node.js",
-  icon: "/assets/tech/nodejs.svg",
-  link: "https://nodejs.org/",
- },
- {
-  name: "Express.js",
-  icon: "/assets/tech/express.svg",
-  class: "invert-0 dark:invert",
-  link: "https://expressjs.com/",
- },
- {
-  name: "NPM",
-  icon: "/assets/tech/npm.svg",
-  link: "https://www.npmjs.com/",
- },
- {
-  name: "PNPM",
-  icon: "/assets/tech/pnpm.svg",
-  link: "https://pnpm.io/",
- },
+    name: "Vercel",
+    icon: "/assets/tech/vercel.svg",
+    class: "invert-0 dark:invert",
+    link: "https://vercel.com/",
+},
+//  {
+//   name: "Typescript",
+//   icon: "/assets/tech/typescript.svg",
+//   link: "https://www.typescriptlang.org/",
+//  },
+//  {
+//   name: "Node.js",
+//   icon: "/assets/tech/nodejs.svg",
+//   link: "https://nodejs.org/",
+//  },
+//  {
+//   name: "Express.js",
+//   icon: "/assets/tech/express.svg",
+//   class: "invert-0 dark:invert",
+//   link: "https://expressjs.com/",
+//  },
+//  {
+//   name: "NPM",
+//   icon: "/assets/tech/npm.svg",
+//   link: "https://www.npmjs.com/",
+//  },
+//  {
+//   name: "PNPM",
+//   icon: "/assets/tech/pnpm.svg",
+//   link: "https://pnpm.io/",
+//  },
  {
   name: "Git",
   icon: "/assets/tech/git.svg",
@@ -264,74 +315,114 @@ export const technologies = [
   link: "https://github.com",
  },
  {
-  name: "GraphQL",
-  icon: "/assets/tech/graphql.svg",
-  link: "https://graphql.org/",
+    name: "Linux",
+    icon: "/assets/tech/linux.svg",
+    link: "https://www.linux.org/"
  },
- {
-  name: "Figma",
-  icon: "/assets/tech/figma.svg",
-  link: "https://figma.com/",
- },
- {
-  name: "Webpack",
-  icon: "/assets/tech/webpack.svg",
-  link: "https://webpack.js.org/",
- },
- {
-  name: "Turborepo",
-  icon: "/assets/tech/turborepo.svg",
-  link: "https://turbo.build/",
- },
- {
-  name: "Deno",
-  icon: "/assets/tech/deno.svg",
-  link: "https://deno.land/",
- },
+//  {
+//   name: "GraphQL",
+//   icon: "/assets/tech/graphql.svg",
+//   link: "https://graphql.org/",
+//  },
+//  {
+//   name: "Figma",
+//   icon: "/assets/tech/figma.svg",
+//   link: "https://figma.com/",
+//  },
+//  {
+//   name: "Webpack",
+//   icon: "/assets/tech/webpack.svg",
+//   link: "https://webpack.js.org/",
+//  },
+//  {
+//   name: "Turborepo",
+//   icon: "/assets/tech/turborepo.svg",
+//   link: "https://turbo.build/",
+//  },
+//  {
+//   name: "Deno",
+//   icon: "/assets/tech/deno.svg",
+//   link: "https://deno.land/",
+//  },
  {
   name: "C++",
   icon: "/assets/tech/cpp.svg",
  },
  {
-  name: "MySQL",
-  icon: "/assets/tech/mysql.svg",
-  link: "https://www.mysql.com/",
+    name: "Java",
+    icon: "/assets/tech/java.svg",
+    link: "https://www.java.com/"
+ },
+//  {
+//   name: "MongoDB",
+//   icon: "/assets/tech/mongodb.svg",
+//   link: "https://www.mongodb.com/",
+//  },
+//  {
+//   name: "Discord.js",
+//   icon: "/assets/tech/discordjs.svg",
+//   link: "https://discord.js.org/",
+//  },
+//  {
+//   name: "Rollup",
+//   icon: "/assets/tech/rollup.svg",
+//   link: "https://rollupjs.org/",
+//  },
+//  {
+//   name: "Docker",
+//   icon: "/assets/tech/docker.svg",
+//   link: "https://www.docker.com/",
+//  },
+ 
+//  {
+//   name: "Astro",
+//   icon: "/assets/tech/astro.svg",
+//   class: "invert-0 dark:invert",
+//   link: "https://astro.build/",
+//  },
+//  {
+//   name: "ESlint",
+//   icon: "/assets/tech/eslint.svg",
+//   link: "https://eslint.org/",
+//  },
+ {
+    name: "PyTorch",
+    icon: "/assets/tech/pytorch.svg",
+    link: "https://pytorch.org/"
  },
  {
-  name: "MongoDB",
-  icon: "/assets/tech/mongodb.svg",
-  link: "https://www.mongodb.com/",
+    name: "Pandas",
+    icon: "/assets/tech/pandas.svg",
+    link: "https://pandas.pydata.org/"
  },
  {
-  name: "Discord.js",
-  icon: "/assets/tech/discordjs.svg",
-  link: "https://discord.js.org/",
+    name: "NumPy",
+    icon: "/assets/tech/numpy.svg",
+    link: "https://numpy.org/"
  },
  {
-  name: "Rollup",
-  icon: "/assets/tech/rollup.svg",
-  link: "https://rollupjs.org/",
+    name: "Matplotlib",
+    icon: "/assets/tech/matplotlib.svg",
+    link: "https://matplotlib.org/"
  },
  {
-  name: "Docker",
-  icon: "/assets/tech/docker.svg",
-  link: "https://www.docker.com/",
+    name: "MATLAB",
+    icon: "/assets/tech/matlab.svg",
+    link: "https://www.mathworks.com/products/matlab.html"
  },
  {
-  name: "Vercel",
-  icon: "/assets/tech/vercel.svg",
-  class: "invert-0 dark:invert",
-  link: "https://vercel.com/",
+    name: "Jupyter",
+    icon: "/assets/tech/jupyter.svg",
+    link: "https://jupyter.org/"
  },
  {
-  name: "Astro",
-  icon: "/assets/tech/astro.svg",
-  class: "invert-0 dark:invert",
-  link: "https://astro.build/",
+    name: "FastAPI",
+    icon: "/assets/tech/fastapi.svg",
+    link: "https://fastapi.tiangolo.com/"
  },
  {
-  name: "ESlint",
-  icon: "/assets/tech/eslint.svg",
-  link: "https://eslint.org/",
+    name: "OpenCV",
+    icon: "/assets/tech/opencv.svg",
+    link: "https://opencv.org/"
  },
 ];

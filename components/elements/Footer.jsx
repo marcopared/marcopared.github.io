@@ -10,20 +10,19 @@ export function Footer() {
       <div className="flex items-center space-x-5">
        <Link href="/" legacyBehavior>
         <p className="flex cursor-pointer items-center  text-2xl font-semibold">
-         Igor Kowalczyk
-         <span className="bg-gradient-to-r from-[#6310ff] to-[#1491ff] box-decoration-clone bg-clip-text text-fill-transparent dark:from-[#a2facf] dark:to-[#64acff]">.</span> <span className="mx-1 mr-2 rounded-lg bg-black/[7%] px-2 py-1 text-xs dark:bg-white/10">v{process.env.VERSION}</span>
+         Marco Paredes
+         <span className="bg-gradient-to-r from-[#6310ff] to-[#1491ff] box-decoration-clone bg-clip-text text-fill-transparent dark:from-[#a2facf] dark:to-[#64acff]">.</span> <span className="mx-1 mr-2 rounded-lg bg-black/[7%] px-2 py-1 text-xs dark:bg-white/10">v{0.10}</span>
         </p>
        </Link>
       </div>
 
       <p className="mt-3  text-gray-700 dark:text-gray-400">
-       Created with ❤️ and ☕ in Poland using{" "}
+       Created with{" "}
        <Link href="https://nextjs.org" target={"_blank"}>
         Next.js
        </Link>
       </p>
       <br />
-      <p className="mb-4  text-slate-600 opacity-50 dark:text-slate-400">A programmer without coffee is like a web browser without the Internet - it seemingly works but is it useful?</p>
      </div>
      {footer.categories.map((category, index) => (
       <div key={index} className="col-span-1 text-gray-700 dark:text-gray-400">
@@ -37,10 +36,6 @@ export function Footer() {
        </div>
       </div>
      ))}
-    </div>
-    <div className="mt-5 flex justify-end text-center  text-gray-700 dark:text-gray-400">
-     {/* DO NOT TOUCH THE CODE BELOW! REMEMBER: YOU CAN ADD YOUR NAME AFTER MY NAME */}
-     <p className="font-semibold">&copy; 2019 - {new Date().getFullYear()} Igor Kowalczyk, All rights reserved.</p>
     </div>
    </div>
   </footer>

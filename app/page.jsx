@@ -1,4 +1,4 @@
-import { header, contact, meta, technologies } from "/config";
+import { header, contact, meta, technologies, experience } from "/config";
 import { ConvertNumber } from "/lib/utils";
 import { UsersIcon, StarIcon } from "@heroicons/react/24/outline";
 import sparkles from "/public/assets/svg/sparkles.svg";
@@ -55,7 +55,7 @@ export default async function HomePage() {
     </div>
    </div>
 
-   <section id={"additional-info"}>
+   {/* <section id={"additional-info"}>
     <div>
      <hr className="m-[0_auto] mb-8 h-[1px] w-full border-none bg-[linear-gradient(to_right,transparent,rgba(0,0,0,0.2)_50%,transparent)] px-8 duration-300 motion-reduce:transition-none dark:bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.1)_50%,transparent)]" />
      <div className="m-[0_auto] mb-8 grid grid-cols-3 gap-x-6 gap-y-10 px-8 text-center  text-zinc-800/70 dark:text-white/70 md:grid-cols-4 md:gap-x-10 lg:grid-cols-4">
@@ -95,7 +95,7 @@ export default async function HomePage() {
       </p>
      </div>
     </div>
-   </section>
+   </section> */}
 
    <section id={"about"} className="scroll-mt-20 pt-12 lg:px-24">
     <div className="relative mx-auto mb-7 text-center">
@@ -111,17 +111,64 @@ export default async function HomePage() {
      </h3>
 
      <div className="prose m-auto px-6 text-center  dark:prose-dark">
-      <span>I have been coding for more than 5 years. I started my journey at the end of 2018.</span>
-      <span>At first, I learned HTML, CSS and base Javascript to build websites</span>
-      <span>
-       {" "}
-       My first project was a simple music player made with Javascript (~January 2019).
-       <br />
-      </span>
-      <span> In March 2020, I started learning Node.js & Express.js, I also created my first major project - Majo.exe.</span>
-      <span> In April 2022, I started learning React.js, Next.js and Tailwind.css</span>
+      <span>My coding journey began in my junior year of high school when I unexpectedly enrolled in a coding class. </span>
+      <span>Since then, I've delved passionately into the expansive world of digital creation. </span>
+      <span>My experience ranges from full-stack development and robotics to microcontrollers and deep learning. </span>
+      <span>Moreover, my education in electrical engineering has instilled in me a solid engineering mindset, </span>
+      <span>allowing me to effectively problem-solve and craft real-world solutions. </span>
+      <span>While I relish all facets of engineering, I've discovered that my strongest passion lies in software engineering. </span>
+      <span>Presently, I'm fully dedicated to software engineering and its cutting-edge technologies, </span>
+      <span>though I continue to explore other areas I love, such as robotics, machine learning, and generative AI. </span>
+      <span>I hope you enjoy exploring my page, and please feel free to check out my socials! 😌</span>
      </div>
     </div>
+   </section>
+
+   <section id={"experience"} className="scroll-mt-20 pt-12 lg:px-24">
+    <div className="relative mx-auto mb-7 text-center">
+     <span className="absolute right-0 top-[90px] z-[-1] fill-black/40 dark:fill-neutral-800">
+      <Dots h="107" w="134" />
+     </span>
+     <span className="absolute -bottom-7 left-0 z-[-1] fill-black/40 dark:fill-neutral-800">
+      <Dots h="70" w="134" />
+     </span>
+
+     <h3 className="m-6 text-center text-[35px] font-semibold tracking-[-0.03em] text-zinc-800 duration-300 motion-reduce:transition-none dark:text-white md:text-[35px] lg:text-[37px] xl:text-[40px]">
+      Where I have worked<span className="bg-gradient-to-r from-[#6310ff] to-[#1491ff] box-decoration-clone bg-clip-text text-fill-transparent dark:from-[#a2facf] dark:to-[#64acff]">.</span>
+     </h3>
+    </div>
+    <div className="mt-6 grid h-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+     {experience.map((tech, index) => {
+      return (
+       <div key={index}>
+        {tech.link ? (
+         <Link href={tech.link} target="_blank" className="relative mx-auto flex w-full cursor-pointer items-end justify-between rounded-xl border bg-zinc-200/[25%] px-4 py-2 text-sm font-semibold text-blue-900 backdrop-blur-[9px] duration-200 hover:bg-zinc-200/60 motion-reduce:transition-none dark:border-neutral-800 dark:bg-[#161617] dark:text-white dark:hover:border-neutral-700 dark:hover:bg-[#202021]">
+          <Image className={`${tech.class ?? ""} h-8 w-8 rounded-md`} loading="lazy" width={32} height={32} src={tech.icon} alt={tech.name} />
+          
+          <div className="font-semibold">
+            <div className="flex items-end">{tech.name}</div>
+            <div className="flex items-end">{tech.position}</div>
+          </div>
+          {/* <div className="font-semibold">{tech.name}</div>
+          <div className="font-semibold">{tech.position}</div>
+          <div className="font-semibold">
+            Skills: {tech.skills.map((skill, index) => (index == tech.skills.length - 1 ? skill : skill + ", "))}
+          </div> */}
+         </Link>
+        ) : (
+         <div key={index} className="relative mx-auto flex w-full cursor-pointer items-center justify-between rounded-xl border bg-zinc-200/[25%] px-4 py-2 text-sm font-semibold text-blue-900 backdrop-blur-[9px] duration-200 hover:bg-zinc-200/60 motion-reduce:transition-none dark:border-neutral-800 dark:bg-[#161617] dark:text-white dark:hover:border-neutral-700 dark:hover:bg-[#202021]">
+          <Image className={`${tech.class ?? ""} h-8 w-8 rounded-md`} loading="lazy" width={32} height={32} src={tech.icon} alt={tech.name} />
+          <span className="font-semibold">{tech.name}</span>
+         </div>
+        )}
+        <p className="font-semibold">
+          Skills: {tech.skills.map((skill, index) => (index == tech.skills.length - 1 ? skill : skill + ", "))}
+        </p>
+       </div>
+      );
+     })}
+    </div>
+    <p className="mt-9 text-center  text-xl font-semibold ">More information on my LinkedIn!</p>
    </section>
 
    <section id={"repositories"} className="scroll-mt-20 pt-12 lg:px-24">
@@ -133,7 +180,7 @@ export default async function HomePage() {
       <div className="xl-grid-cols-4 mb-8 grid grid-cols-1 gap-x-6 gap-y-10 pb-4 text-center  text-zinc-800 dark:text-white md:grid-cols-2 md:gap-x-10 lg:grid-cols-3">
        {reposData &&
         reposData.map((repo) => {
-         return repo.node.owner.login == "IgorKowalczyk" ? <RepoCard key={repo.node.id} {...repo.node} /> : null;
+         return repo.node.owner.login == "marcopared" ? <RepoCard key={repo.node.id} {...repo.node} /> : null;
         })}
       </div>
       <div className="pointer-events-visible section-fade absolute inset-x-0 bottom-0 z-20 flex pb-8 pt-32 duration-300">
