@@ -1,8 +1,8 @@
 "use client";
 
 import { Transition, Popover } from "@headlessui/react";
-import { meta } from "/config";
-import { CodeBracketIcon, RectangleStackIcon, EnvelopeOpenIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+import { meta, files } from "/config";
+import { CodeBracketIcon, DocumentTextIcon, ArrowDownOnSquareIcon, RectangleStackIcon, EnvelopeOpenIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Link from "next/link";
 
@@ -40,25 +40,25 @@ export default function NavPopover(props) {
          </div>
          <div className="ml-4">
           <p className="text-sm font-medium text-gray-900 dark:text-white">My Github profile</p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">Web development, Discord Bots, and more</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">Projects of end-to-end systems, data, and ML</p>
          </div>
         </Link>
-        <Link href="/blog" key="blog" onClick={() => close()} className="mt-1 flex items-center rounded-lg p-3 transition duration-150 ease-in-out hover:bg-blue-400/20 dark:hover:bg-white/5">
+        <a href={files.resume} key="resume" className="mt-1 flex items-center rounded-lg p-3 transition duration-150 ease-in-out hover:bg-blue-400/20 dark:hover:bg-white/5" download>
          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-400/20 text-white dark:bg-white/10 dark:text-zinc-800 sm:h-12 sm:w-12">
-          <RectangleStackIcon className="inline h-[24px] w-[24px] stroke-black duration-200 motion-reduce:transition-none dark:stroke-white/[70%]" />
+          <ArrowDownOnSquareIcon className="inline h-[24px] w-[24px] stroke-black duration-200 motion-reduce:transition-none dark:stroke-white/[70%]" />
          </div>
          <div className="ml-4">
-          <p className="text-sm font-medium text-gray-900 dark:text-white">Developer Blog</p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">About my projects, web security and design</p>
+          <p className="text-sm font-medium text-gray-900 dark:text-white">Download Resume</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">Including most relevant experience and projects</p>
          </div>
-        </Link>
+        </a>
         <Link href="/contact" key="contact_navbar" onClick={() => close()} className="mt-1 flex items-center rounded-lg p-3 transition duration-150 ease-in-out hover:bg-blue-400/20 dark:hover:bg-white/5">
          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-400/20 text-white dark:bg-white/10 dark:text-zinc-800 sm:h-12 sm:w-12">
           <EnvelopeOpenIcon className="inline h-[24px] w-[24px] stroke-black duration-200 motion-reduce:transition-none dark:stroke-white/[70%]" />
          </div>
          <div className="ml-4">
           <p className="text-sm font-medium text-gray-900 dark:text-white">Contact me</p>
-          <p className="text-sm text-gray-500 dark:text-gray-400">Do you have any questions? I always answer</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">Feel free to reach out on my email or socials!</p>
          </div>
         </Link>
        </div>

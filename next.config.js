@@ -143,9 +143,11 @@ const nextConfig = {
 };
 
 module.exports = () => {
+    
  const plugins = [withContentlayer, withBundleAnalyzer];
  const config = plugins.reduce((acc, next) => next(acc), {
   ...nextConfig,
  });
+
  return config;
 };

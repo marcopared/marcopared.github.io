@@ -3,6 +3,7 @@ import { ConvertNumber } from "/lib/utils";
 import { UsersIcon, StarIcon } from "@heroicons/react/24/outline";
 import sparkles from "/public/assets/svg/sparkles.svg";
 import Dots from "components/decorations/Dots";
+import { PictureCard } from "components/elements/PictureCard";
 import { CodeCard } from "components/elements/CodeCard";
 import { Contact } from "components/elements/client/Contact";
 import { GlowEffect } from "components/elements/client/GlowEffect";
@@ -48,13 +49,16 @@ export default async function HomePage() {
 
       <div className="hidden items-center motion-reduce:transition-none md:col-span-3 md:-mb-7 md:mt-7 md:flex lg:col-span-2 lg:mb-0 lg:mt-0">
        <GlowEffect className="z-10 block w-full">
-        <CodeCard userData={userData} contributions={contributions} />
+        <PictureCard userData={userData} contributions={contributions} />
+        {/* <CodeCard userData={userData} contributions={contributions} /> */}
        </GlowEffect>
       </div>
      </div>
     </div>
    </div>
 
+   {/* Following section is for the part that shows the amount of stars
+   on repositories, commits, forks, and followers*/}
    {/* <section id={"additional-info"}>
     <div>
      <hr className="m-[0_auto] mb-8 h-[1px] w-full border-none bg-[linear-gradient(to_right,transparent,rgba(0,0,0,0.2)_50%,transparent)] px-8 duration-300 motion-reduce:transition-none dark:bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.1)_50%,transparent)]" />
@@ -143,12 +147,24 @@ export default async function HomePage() {
        <div key={index}>
         {tech.link ? (
          <Link href={tech.link} target="_blank" className="relative mx-auto flex w-full cursor-pointer items-end justify-between rounded-xl border bg-zinc-200/[25%] px-4 py-2 text-sm font-semibold text-blue-900 backdrop-blur-[9px] duration-200 hover:bg-zinc-200/60 motion-reduce:transition-none dark:border-neutral-800 dark:bg-[#161617] dark:text-white dark:hover:border-neutral-700 dark:hover:bg-[#202021]">
-          <Image className={`${tech.class ?? ""} h-8 w-8 rounded-md`} loading="lazy" width={32} height={32} src={tech.icon} alt={tech.name} />
-          
-          <div className="font-semibold">
-            <div className="flex items-end">{tech.name}</div>
-            <div className="flex items-end">{tech.position}</div>
+          <div>
+            <Image className={`${tech.class ?? ""} h-8 w-8 rounded-md flex content-center justify-center`} loading="lazy" width={32} height={32} src={tech.icon} alt={tech.name} />
+            <br />
+            <span className="font-semibold flex content-center">{tech.name}</span>
+            <br />
+            <div className="flex content-start"> 
+              {tech.position}
+            </div>
+            <div>
+              <p className="font-semibold">
+                Skills: {tech.skills.map((skill, index) => (index == tech.skills.length - 1 ? skill : skill + ", "))}
+              </p>
+            </div>
           </div>
+          
+          
+          
+          
           {/* <div className="font-semibold">{tech.name}</div>
           <div className="font-semibold">{tech.position}</div>
           <div className="font-semibold">
@@ -161,14 +177,21 @@ export default async function HomePage() {
           <span className="font-semibold">{tech.name}</span>
          </div>
         )}
-        <p className="font-semibold">
-          Skills: {tech.skills.map((skill, index) => (index == tech.skills.length - 1 ? skill : skill + ", "))}
-        </p>
        </div>
       );
      })}
     </div>
-    <p className="mt-9 text-center  text-xl font-semibold ">More information on my LinkedIn!</p>
+    <div className="mt-9 text-center  text-xl font-semibold md:block">
+        <Link href={`https://linkedin.com/in/${meta.accounts.linkedin.username}`} scroll={false} className="arrow link group relative mt-5 inline-block items-center justify-center p-2 pb-1 pl-0 pr-0  font-semibold">
+         <>
+          More information on my LinkedIn!
+          <svg className="arrowSymbol inline-block translate-x-[5px] duration-200 group-hover:translate-x-[10px] motion-reduce:transition-none" width="16" height="16" viewBox="0 0 16 16" fill="none">
+           <path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path>
+           <path stroke="currentColor" d="M1.75 8H11" strokeWidth={2} strokeLinecap="round"></path>
+          </svg>
+         </>
+        </Link>
+       </div>
    </section>
 
    <section id={"repositories"} className="scroll-mt-20 pt-12 lg:px-24">

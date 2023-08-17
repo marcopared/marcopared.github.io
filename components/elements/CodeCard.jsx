@@ -56,10 +56,6 @@ export function CodeCard({ userData, contributions }) {
         <Link href={`https://discord.com/users/${meta.accounts.discord.id}`} target="_blank">
          {meta.accounts.discord.username}
         </Link>
-        <br />+ <span className="font-semibold">Link:</span>{" "}
-        <Link href={meta.accounts.discord.invite} target="_blank">
-         {meta.accounts.discord.invite}
-        </Link>
        </div>
       </div>
      )}

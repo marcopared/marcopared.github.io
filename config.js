@@ -60,6 +60,13 @@ export const nav = {
  ],
 };
 
+export const selfportraits = {
+    main: {
+        src: "/assets/selfportraits/main-1.jpg",
+        alt: "Marco Paredes",
+    },
+};
+
 export const contact = {
  links: [
   {
@@ -204,9 +211,9 @@ export const experience = [
         name: "pSemi",
         position: "Characterization Engineering Intern",
         date: "September 2021 - February 20222",
-        skills: ["Python", "Excel"],
+        skills: ["Python", "Excel", "RF Verification"],
         link: "https://www.psemi.com/",
-        icon: "/assets/experience/psemi.svg"
+        icon: "/assets/experience/psemi-full.svg"
     },
     {
         name: "Northrop Grumman",
@@ -220,17 +227,17 @@ export const experience = [
         name: "ECE 196 at UCSD",
         position: "Engineering Tutor                 ",
         date: "January 2020 - May 2021",
-        skills: ["C/C++", "Arduino C"],
+        skills: ["C/C++", "Arduino C", "Protothread"],
         link: "https://www.ece.ucsd.edu/undergraduate/course-information/hands-courses",
-        icon: "/assets/experience/ucsd.svg"
+        icon: "/assets/experience/ucsd-seal.png"
     },
     {
         name: "CMRR at UCSD",
         position: "Undergraduate Researcher          ",
         date: "September 2019 - March 2020",
-        skills: ["C/C++"],
+        skills: ["C/C++", "Arduino C", "Validation"],
         link: "https://cmrr.ucsd.edu/",
-        icon: "/assets/experience/cmrr.svg"
+        icon: "/assets/experience/cmrr.jpeg"
     }
 ]
 
@@ -426,3 +433,7 @@ export const technologies = [
     link: "https://opencv.org/"
  },
 ];
+
+export const files = {
+    resume: "/assets/pdfs/Marco_Paredes_resume.pdf",
+}
