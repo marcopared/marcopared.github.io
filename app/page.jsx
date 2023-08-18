@@ -121,9 +121,9 @@ export default async function HomePage() {
       <span>Moreover, my education in electrical engineering has instilled in me a solid engineering mindset, </span>
       <span>allowing me to effectively problem-solve and craft real-world solutions. </span>
       <span>While I relish all facets of engineering, I've discovered that my strongest passion lies in software engineering. </span>
-      <span>Presently, I'm fully dedicated to software engineering and its cutting-edge technologies, </span>
+      <span>Now I'm fully dedicated to software engineering and its cutting-edge technologies, </span>
       <span>though I continue to explore other areas I love, such as robotics, machine learning, and generative AI. </span>
-      <span>I hope you enjoy exploring my page, and please feel free to check out my socials! 😌</span>
+      <span>I hope you enjoy exploring my page, and feel free to check out my socials! 😌</span>
      </div>
     </div>
    </section>
