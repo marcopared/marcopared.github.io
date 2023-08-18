@@ -66,6 +66,7 @@ export default function RootLayout({ children, modal }) {
       </main>
       <Footer />
      </Theme>
+     <Analytics />
     </body>
    </html>
   </ServerThemeProvider>
