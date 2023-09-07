@@ -253,6 +253,21 @@ export const technologies = [
     link: "https://aws.amazon.com/"
  },
  {
+   name: "Google Cloud",
+   icon: "/assets/tech/google-cloud.svg",
+   link: "https://cloud.google.com/"
+ },
+ {
+   name: "Firebase",
+   icon: "/assets/tech/firebase.svg",
+   link: "https://firebase.google.com/"
+ },
+ {
+   name: "REST APIs",
+   icon: "/assets/tech/rest-api.svg",
+   link: "https://aws.amazon.com/what-is/restful-api"
+ },
+ {
     name: "MySQL",
     icon: "/assets/tech/mysql.svg",
     link: "https://www.mysql.com/",
@@ -284,27 +299,27 @@ export const technologies = [
     class: "invert-0 dark:invert",
     link: "https://vercel.com/",
 },
-//  {
-//   name: "Typescript",
-//   icon: "/assets/tech/typescript.svg",
-//   link: "https://www.typescriptlang.org/",
-//  },
-//  {
-//   name: "Node.js",
-//   icon: "/assets/tech/nodejs.svg",
-//   link: "https://nodejs.org/",
-//  },
+ {
+  name: "Typescript",
+  icon: "/assets/tech/typescript.svg",
+  link: "https://www.typescriptlang.org/",
+ },
+ {
+  name: "Node.js",
+  icon: "/assets/tech/nodejs.svg",
+  link: "https://nodejs.org/",
+ },
 //  {
 //   name: "Express.js",
 //   icon: "/assets/tech/express.svg",
 //   class: "invert-0 dark:invert",
 //   link: "https://expressjs.com/",
 //  },
-//  {
-//   name: "NPM",
-//   icon: "/assets/tech/npm.svg",
-//   link: "https://www.npmjs.com/",
-//  },
+ {
+  name: "NPM",
+  icon: "/assets/tech/npm.svg",
+  link: "https://www.npmjs.com/",
+ },
 //  {
 //   name: "PNPM",
 //   icon: "/assets/tech/pnpm.svg",
@@ -375,11 +390,11 @@ export const technologies = [
 //   icon: "/assets/tech/rollup.svg",
 //   link: "https://rollupjs.org/",
 //  },
-//  {
-//   name: "Docker",
-//   icon: "/assets/tech/docker.svg",
-//   link: "https://www.docker.com/",
-//  },
+ {
+  name: "Docker",
+  icon: "/assets/tech/docker.svg",
+  link: "https://www.docker.com/",
+ },
  
 //  {
 //   name: "Astro",
