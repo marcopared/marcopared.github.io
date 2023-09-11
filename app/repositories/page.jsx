@@ -19,7 +19,7 @@ export default async function GithubRepositories() {
     <Squares w="404" h="404" />
    </div>
    <h1 className="mb-8 mt-6 flex items-center justify-center box-decoration-clone bg-clip-text px-8 text-center  text-[2rem] font-semibold motion-reduce:transition-none">
-    My work<span className="bg-gradient-to-r from-[#6310ff] to-[#1491ff] box-decoration-clone bg-clip-text text-fill-transparent dark:from-[#a2facf] dark:to-[#64acff]">.</span>
+    GitHub projects<span className="bg-gradient-to-r from-[#6310ff] to-[#1491ff] box-decoration-clone bg-clip-text text-fill-transparent dark:from-[#a2facf] dark:to-[#64acff]">.</span>
    </h1>
    <>
     {repositories && (

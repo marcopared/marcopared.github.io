@@ -48,7 +48,7 @@ export const nav = {
   },
   {
    href: "/repositories/",
-   title: "My work",
+   title: "GitHub Projects",
   }
  ],
  right: [
@@ -56,7 +56,7 @@ export const nav = {
    href: "https://linkedin.com/in/ma-parede/",
    title: "LinkedIn",
    target: "_blank",
-  }
+  },
  ],
 };
 
@@ -451,4 +451,5 @@ export const technologies = [
 
 export const files = {
     resume: "/assets/pdfs/Marco_Paredes_resume.pdf",
+    resumeLink: "https://drive.google.com/file/d/1kbg2ibnhtPwYnI1qPxypDntEo8ILGLiI/view?usp=sharing",
 }
