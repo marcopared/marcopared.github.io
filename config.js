@@ -153,12 +153,22 @@ export const footer = {
     {
      title: "Projects",
      href: "/repositories",
-    }
+    },
+    {
+      title: "Resume",
+      href: `${files.resumeLink}`,
+      target: "_blank",
+     },
    ],
   },
   {
    title: "Socials",
    links: [
+      {
+         title: "LinkedIn",
+         href: `https://linkedin.com/in/${meta.accounts.linkedin.username}`,
+         target: "_blank",
+        },
     {
      title: "Github",
      href: `https://github.com/${meta.accounts.github.username}`,
@@ -167,11 +177,6 @@ export const footer = {
     {
      title: "Instagram",
      href: `https://instagram.com/${meta.accounts.instagram.username}`,
-     target: "_blank",
-    },
-    {
-     title: "LinkedIn",
-     href: `https://linkedin.com/in/${meta.accounts.linkedin.username}`,
      target: "_blank",
     },
     {
