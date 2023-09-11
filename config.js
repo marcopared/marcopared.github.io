@@ -27,8 +27,12 @@ export const meta = {
   },
   strava: {
     id: "107116948"
-  }
+  },
  },
+ resume: {
+   file: "/assets/pdfs/Marco_Paredes_resume.pdf",
+   link: "https://drive.google.com/file/d/1kbg2ibnhtPwYnI1qPxypDntEo8ILGLiI/view?usp=sharing",
+ }
 };
 
 export const header = {
@@ -156,7 +160,7 @@ export const footer = {
     },
     {
       title: "Resume",
-      href: `${files.resumeLink}`,
+      href: `${meta.resume.link}`,
       target: "_blank",
      },
    ],
