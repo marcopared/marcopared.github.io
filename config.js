@@ -1,7 +1,7 @@
 export const meta = {
  title: "Marco Paredes",
  author: "Marco Paredes",
- description: "I'm a software engineer based in San Diego. I have a passion for engineering real-world solutions.",
+ description: "I'm a software engineer based in San Diego. Love reading engineering and philosophy books/blogs. I currently work in financial technology at a multinational bank.",
  url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : `http://localhost:${process.env.PORT || 3000}`,
  themeColor: "#091430",
  locale: "en_US",
@@ -31,7 +31,7 @@ export const meta = {
  },
  resume: {
    file: "/assets/pdfs/Marco_Paredes_resume.pdf",
-   link: "https://drive.google.com/file/d/1kbg2ibnhtPwYnI1qPxypDntEo8ILGLiI/view?usp=sharing",
+   link: "https://drive.google.com/file/d/14EtrNVn4IjKiH_qf8rq7F0xBuDZBGHy3/view?usp=sharing",
  }
 };
 
@@ -209,6 +209,14 @@ export const footer = {
 
 export const experience = [
     {
+      name: "Wells Fargo",
+      position: "Software Engineer                    ",
+      date: "January 2024 - Present",
+      skills: ["Python", "SQL", "NoSQL", "Azure"],
+      link: "https://wellsfargo.com/",
+      icon: "/assets/experience/wellsfargo.svg"
+    },
+    {
         name: "Qualcomm",
         position: "Software Engineering Intern        ",
         date: "June 2022 - September 2022",
@@ -257,6 +265,26 @@ export const technologies = [
     link: "https://www.python.org/"
  },
  {
+   name: "Azure",
+   icon: "/assets/tech/azure.svg",
+   link: "https://azure.com"
+ },
+ {
+   name: "Mongo DB",
+   icon: "/assets/tech/mongodb.svg",
+   link: "https://mongodb.com"
+ },
+ {
+   name: "REST APIs",
+   icon: "/assets/tech/rest-api.svg",
+   link: "https://aws.amazon.com/what-is/restful-api"
+ },
+ {
+    name: "MySQL",
+    icon: "/assets/tech/mysql.svg",
+    link: "https://www.mysql.com/",
+ },
+ {
     name: "AWS",
     icon: "/assets/tech/aws.svg",
     link: "https://aws.amazon.com/"
@@ -270,16 +298,6 @@ export const technologies = [
    name: "Firebase",
    icon: "/assets/tech/firebase.svg",
    link: "https://firebase.google.com/"
- },
- {
-   name: "REST APIs",
-   icon: "/assets/tech/rest-api.svg",
-   link: "https://aws.amazon.com/what-is/restful-api"
- },
- {
-    name: "MySQL",
-    icon: "/assets/tech/mysql.svg",
-    link: "https://www.mysql.com/",
  },
  {
     name: "Javascript",
@@ -296,6 +314,16 @@ export const technologies = [
   icon: "/assets/tech/next.svg",
   class: "invert-0 dark:invert",
   link: "https://nextjs.org/",
+ },
+ {
+   name: "Flask",
+   icon: "/assets/tech/flask.svg",
+   link: "https://flask.palletsprojects.com//"
+ },
+ {
+   name: "FastAPI",
+   icon: "/assets/tech/fastapi.svg",
+   link: "https://fastapi.tiangolo.com/"
  },
  {
     name: "Plotly",
@@ -328,6 +356,11 @@ export const technologies = [
   name: "NPM",
   icon: "/assets/tech/npm.svg",
   link: "https://www.npmjs.com/",
+ },
+ {
+   name: "Java",
+   icon: "/assets/tech/java.svg",
+   link: "https://www.java.com/"
  },
 //  {
 //   name: "PNPM",
@@ -379,16 +412,6 @@ export const technologies = [
   name: "C++",
   icon: "/assets/tech/cpp.svg",
  },
- {
-    name: "Java",
-    icon: "/assets/tech/java.svg",
-    link: "https://www.java.com/"
- },
-//  {
-//   name: "MongoDB",
-//   icon: "/assets/tech/mongodb.svg",
-//   link: "https://www.mongodb.com/",
-//  },
 //  {
 //   name: "Discord.js",
 //   icon: "/assets/tech/discordjs.svg",
@@ -445,11 +468,6 @@ export const technologies = [
     name: "Jupyter",
     icon: "/assets/tech/jupyter.svg",
     link: "https://jupyter.org/"
- },
- {
-    name: "FastAPI",
-    icon: "/assets/tech/fastapi.svg",
-    link: "https://fastapi.tiangolo.com/"
  },
  {
     name: "OpenCV",

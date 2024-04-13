@@ -26,7 +26,7 @@
     "contentlayer": "0.3.4",
     "dotenv": "16.3.1",
     "github-slugger": "2.0.0",
-    "next": "13.4.13",
+    "next": "^14.0.3",
     "next-contentlayer": "0.3.4",
     "next-nprogress-bar": "2.1.0",
     "next-themes": "npm:@wits/next-themes@0.2.16",
@@ -84,5 +84,11 @@
     "url": "https://github.com/igorkowalczyk/igorkowalczyk.github.io/issues"
   },
   "homepage": "https://igorkowalczyk.dev",
-  "packageManager": "pnpm@8.6.12"
+  "packageManager": "pnpm@8.6.12",
+  "main": ".eslintrc.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "keywords": []
 }
