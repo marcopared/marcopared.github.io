@@ -42,7 +42,7 @@
     "rehype-slug": "5.1.0",
     "remark-gfm": "3.0.1",
     "server-only": "0.0.1",
-    "sharp": "0.32.4",
+    "sharp": "^0.32.6",
     "swr": "2.2.0",
     "validator": "13.11.0"
   },
@@ -59,7 +59,7 @@
     "globby": "13.2.2",
     "lodash": "4.17.21",
     "mini-svg-data-uri": "1.4.4",
-    "postcss": "8.4.27",
+    "postcss": "^8.4.38",
     "prettier": "3.0.1",
     "prettier-plugin-tailwindcss": "0.4.1",
     "raw-loader": "^4.0.2",
